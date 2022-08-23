@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=2 python detect_savetxt.py --weights best.pt --conf 0.01 --img-size 640 --source /raid/AI_lai/CYJ/data/sku_detection/20211207_online_test/val/JPEGImages_match/

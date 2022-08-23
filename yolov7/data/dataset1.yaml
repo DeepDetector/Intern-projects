@@ -1,0 +1,9 @@
+# COCO 2017 dataset http://cocodataset.org
+train: ./dataset1/train.txt # 118287 images
+val: ./dataset1/test.txt # 5000 images
+test: ./dataset1/test.txt
+# number of classes
+nc: 1
+ 
+# class names
+names: ['something']

@@ -1,0 +1,30 @@
+# PASCAL VOC dataset http://host.robots.ox.ac.uk/pascal/VOC/
+# Train command: python train.py --data voc.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /VOC
+#     /yolov5
+
+
+# download command/URL (optional)
+# download: bash data/scripts/get_voc.sh
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+# train: ../VOC/images/train/  # 16551 images
+#val: /home/ubt/ZZX/data/detection_dataset/test_dataset/subset0/yolo_format/difficult/images/  # 2 images
+# val: /home/ubt/ZZX/data/detection_dataset/test_dataset/subset0/yolo_format/none/images/  # 1266 images
+# train: /raid/ZZX/projects/source_code_yolo_ib/datasets/v3/images/train/
+# train: /home/ubt/ZZX/data/detection_dataset/temp_dataset/images/train
+train: /home/ubt/ZZX/projects/source_code_yolo_ib/datasets/v2/images/train/
+val: /home/ubt/data/detection/20211207_online_test/val/  # 1725 images
+# val: /home/ubt/ZZX/data/detection_dataset/test_dataset/subset0/yolo_format/overlap/images/  # 128 images
+# val: /home/ubt/ZZX/data/detection_dataset/test_dataset/subset0/yolo_format/small/images/  # 25 images
+
+# number of classes
+nc: 1
+
+# class names
+names: ['something']
+
+# python train.py --device 6,7 --img 640 --batch 64 --epochs 50 --data ./data/vending_255.yaml --cfg ./configs/yolov5s.yaml --weights ./weights/yolov5s.pt --sync-bn --logdir runs --multi-scale --single-cls 
+# python train.py --device 6,7 --img 640 --batch 64 --epochs 50 --data ./data/sku.yaml --cfg ./configs/yolov5s.yaml --weights /home/ubt/LHX/YOLO5-TEST/Single/weights/vending_yolov5s/best.pt --sync-bn --logdir runs --multi-scale

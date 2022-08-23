@@ -1,0 +1,3 @@
+CUDA_VISIBLE_DEVICES=2 python detect.py --source /raid/AI_lai/share/wb/code/source_code_yolo_ib/video/ --output /raid/AI_lai/share/wb/code/source_code_yolo_ib/save_output_jpg/ --weights runs/test_model.pt --conf 0.4
+# CUDA_VISIBLE_DEVICES=2 python detect.py --source /raid/AI_lai/share/wb/code/source_code_yolo_ib/video/353470090699842_MZ20220605190541197104623424358_DR.mp4 --output /raid/AI_lai/share/wb/code/source_code_yolo_ib/save_output_jpg/ --weights runs/test_model.pt --conf 0.4
+#CUDA_VISIBLE_DEVICES=7 python detect.py --source ./multi_sku_video_checked/ --weights ./models/best_original.pt --conf 0.4 --save-txt
